@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_default"
+    tools:context=".presentation.MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/portrait_image_view"
+        android:layout_width="@dimen/list_item_avatar_size"
+        android:layout_height="@dimen/list_item_avatar_size"
+        android:layout_marginEnd="@dimen/spacing_default"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/name_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedShapeOverlay"
+        tools:srcCompat="@drawable/img_user_placeholder"/>
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@id/dob_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/portrait_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Kimberley Carpenter" />
+
+    <TextView
+        android:id="@+id/dob_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="1 2 1990"
+        android:textAppearance="?textAppearanceCaption"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/name_text_view"
+        app:layout_constraintStart_toStartOf="@+id/name_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

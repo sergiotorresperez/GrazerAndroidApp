@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Grazer Users</string>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_submit">Submit</string>
+    <string name="login_loading">Loading…</string>
+    <string name="login_failure">"Wrong username or password"</string>
+
+    <string name="users_load_error">Error loading users</string>
+    <string name="content_error_default">Ops, something went wrong.</string>
+
+</resources>
